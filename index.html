@@ -202,6 +202,83 @@
       margin-top: 8px;
     }
 
+    .research-item {
+  padding: 22px 0;
+  border-bottom: 1px solid #edf0f2;
+}
+
+.research-item:first-of-type {
+  padding-top: 0;
+}
+
+.research-item:last-child {
+  border-bottom: 0;
+}
+
+.research-item-compact {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.research-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px 22px;
+  align-items: baseline;
+}
+
+.research-meta {
+  margin: 0;
+  color: var(--muted);
+  text-align: right;
+  white-space: nowrap;
+  font-size: 0.94rem;
+}
+
+.research-role {
+  margin-top: 4px;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.research-supervisor {
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+.research-summary {
+  margin-top: 10px;
+}
+
+.research-item ul {
+  margin-top: 10px;
+}
+
+.research-links {
+  margin-top: 9px;
+  font-size: 0.94rem;
+}
+
+.honor-item {
+  margin-bottom: 16px;
+}
+
+.honor-item:last-child {
+  margin-bottom: 0;
+}
+
+.honor-item strong,
+.honor-item span {
+  display: block;
+}
+
+.honor-item span {
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+    
     footer {
       margin-top: 48px;
       padding-top: 18px;
@@ -216,15 +293,17 @@
         padding-top: 42px;
       }
 
-      .entry-head {
-        grid-template-columns: 1fr;
-        gap: 2px;
-      }
+     .entry-head,
+.research-header {
+  grid-template-columns: 1fr;
+  gap: 2px;
+}
 
-      .entry-meta {
-        text-align: left;
-        white-space: normal;
-      }
+.entry-meta,
+.research-meta {
+  text-align: left;
+  white-space: normal;
+}
 
       .contact .divider {
         display: none;
