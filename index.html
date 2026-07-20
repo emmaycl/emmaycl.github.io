@@ -321,24 +321,12 @@
     }
 
 
-.entry-head,
-.entry-meta,
-.research-meta {
-  text-align: left;
-  white-space: normal;
-}
+@media (max-width: 680px) {
+  .page {
+    width: min(calc(100% - 28px), var(--max-width));
+    padding-top: 42px;
+  }
 
-      .contact .divider {
-        display: none;
-      }
-
-      .contact {
-        flex-direction: column;
-        gap: 2px;
-      }
-    }
-
- @media (max-width: 680px) {
   .entry-head,
   .research-header {
     grid-template-columns: 1fr;
@@ -353,6 +341,15 @@
 
   .research-role {
     white-space: normal;
+  }
+
+  .contact {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .contact .divider {
+    display: none;
   }
 }
   </style>
@@ -386,13 +383,17 @@
 <main>
 <section id="about">
   <h2>About</h2>
-  <p>
-      I am interested in understanding how learned representations can remain reliable under distribution shift,
-      and how multimodal signals and geometric structure can help models generalize across datasets and tasks. More broadly, 
-      I hope to develop mathematically principled learning methods that are reliable and generalizable in scientific and embodied applications. 
-Previously, I earned my bachelor's degree at the University of Michigan, where my research involved evaluating foundation-model 
-      representations, designing algorithms for infinite mathematical structures, and developing statistical methods for scientific data.
-  </p>
+ <p>
+  I am interested in understanding how representations learned by machine
+  learning models fail under distribution shift, and how multimodal signals
+  and geometric structure can improve generalization across datasets and
+  tasks. More broadly, I hope to develop mathematically principled machine
+  learning methods for reliable generalization in scientific and embodied
+  systems. Previously, at the University of Michigan, I worked on evaluating
+  foundation-model representations, designing algorithms for infinite
+  mathematical structures, and developing statistical methods for scientific
+  data.
+</p>
 </section>
 <section id="education">
 <h2>Education</h2>
