@@ -51,7 +51,7 @@
     }
 
     header {
-      padding-bottom: 24px;
+      padding-bottom: 18px;
     }
 
     h1 {
@@ -226,6 +226,28 @@
   padding: 24px 0;
 }
 
+.research-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) max-content;
+  column-gap: 20px;
+  align-items: end;
+}
+
+.research-header > div {
+  min-width: 0;
+}
+
+.research-role {
+  margin: 0.2rem 0 0;
+  white-space: nowrap;
+}
+
+.research-meta {
+  margin: 0;
+  white-space: nowrap;
+  text-align: right;
+}
+
 .research-header h3 {
   margin-bottom: 0.2rem;
   font-size: 1.12rem;
@@ -298,34 +320,8 @@
       font-size: 0.88rem;
     }
 
-    @media (max-width: 680px) {
-      .page {
-        width: min(calc(100% - 28px), var(--max-width));
-        padding-top: 42px;
-      }
 
-     .entry-head,
-.research-header {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  column-gap: 16px;
-  align-items: end;
-}
-
-.research-header > div {
-  min-width: 0;
-}
-
-.research-role {
-  margin: 0.2rem 0 0;
-  white-space: nowrap;
-}
-
-.research-meta {
-  margin: 0;
-  white-space: nowrap;
-}
-
+.entry-head,
 .entry-meta,
 .research-meta {
   text-align: left;
@@ -342,7 +338,7 @@
       }
     }
 
-    @media (max-width: 680px) {
+ @media (max-width: 680px) {
   .entry-head,
   .research-header {
     grid-template-columns: 1fr;
@@ -350,9 +346,12 @@
   }
 
   .entry-meta,
-  .research-role,
   .research-meta {
     text-align: left;
+    white-space: normal;
+  }
+
+  .research-role {
     white-space: normal;
   }
 }
@@ -388,11 +387,9 @@
 <section id="about">
   <h2>About</h2>
   <p>
-  I am an incoming M.E. student in Computational Science and Engineering at Harvard University.
-      My research interests include robust representation learning, multimodal learning, and geometric machine learning. 
-      I am particularly interested in understanding how learned representations can remain reliable under distribution shift,
+      I am interested in understanding how learned representations can remain reliable under distribution shift,
       and how multimodal signals and geometric structure can help models generalize across datasets and tasks. More broadly, 
-      I hope to develop mathematically principled learning methods that are reliable in embodied and scientific applications. 
+      I hope to develop mathematically principled learning methods that are reliable and generalizable in scientific and embodied applications. 
 Previously, I earned my bachelor's degree at the University of Michigan, where my research involved evaluating foundation-model 
       representations, designing algorithms for infinite mathematical structures, and developing statistical methods for scientific data.
   </p>
