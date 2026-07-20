@@ -316,50 +316,167 @@ Previously, I earned my bachelor's degree at the University of Michigan, where m
   </div>
 </section>
 <section id="research">
-<h2>Research Experience</h2>
-<article class="entry">
-<div class="entry-head">
-<h3>Laboratory of Geometry at Michigan (LoG(M)), University of Michigan</h3>
-<div class="entry-meta">Ann Arbor, MI · Aug 2025–Jul 2026</div>
-</div>
-<p class="role">Undergraduate Researcher, supervised by Dr. Grant T. Barkley</p>
-<p class="summary">Algorithms, data structures, and research software for infinite mathematical structures (translation-invariant total orders).</p>
+  <h2>Research Experience</h2>
 
-</article>
-<article class="entry">
-<div class="entry-head">
-<h3>Ronglai Shen Lab, Memorial Sloan Kettering Cancer Center</h3>
-<div class="entry-meta">New York, NY · Jun–Aug 2025</div>
-</div>
-<p class="role">Summer Fellow, Quantitative Sciences Undergraduate Research Experience (QSURE)</p>
-<p class="summary">Analysis and controlled evaluation of representations learned by self-supervised multimodal models.</p>
-</article>
-<article class="entry">
-<div class="entry-head">
-<h3>TRACTION &amp; BNDC, University of Texas MD Anderson Cancer Center</h3>
-<div class="entry-meta">Houston, TX · Jun–Aug 2024</div>
-</div>
-<p class="role">Summer Intern, CATALYST Summer Research Internship</p>
-<p class="summary">Multimodal evaluation and downstream adaptation of representations learned by vision-language foundation models.</p>
-</article>
-<article class="entry">
-<div class="entry-head">
-<h3>Vivian G. Cheung Lab, University of Michigan / Brown University</h3>
-<div class="entry-meta">Ann Arbor, MI · Sep 2023–Apr 2026</div>
-</div>
-<p class="role">Undergraduate Researcher</p>
-<p class="summary">Statistical and mathematical analyses to decipher RNA Polymerase II pausing mechanisms.</p>
+  <!-- TITO / LoG(M) -->
+  <article class="research-item">
+    <div class="research-header">
+      <div>
+        <h3>Laboratory of Geometry at Michigan (LoG(M))</h3>
+        <p class="research-role">
+          Undergraduate Researcher · University of Michigan
+        </p>
+      </div>
+      <p class="research-meta">
+        Ann Arbor, MI · Aug. 2025–Jul. 2026
+      </p>
+    </div>
 
-</article>
-<article class="entry">
-<div class="entry-head">
-<h3>Nam Tran Lab, UC Davis School of Medicine</h3>
-<div class="entry-meta">Sacramento, CA · Jun–Aug 2023</div>
-</div>
-<p class="role">Summer Intern, Hugh Edmondson Summer Research Internship</p>
-<p class="summary">Proteomic profiling and computational biomarker discovery to support earlier sepsis diagnosis.</p>
+    <p class="research-supervisor">
+      Supervised by Dr. Grant T. Barkley 
+    </p>
 
-</article>
+    <p class="research-summary">
+      Developed algorithms, data structures, and research software for
+      computation with translation-invariant total orders, a class of
+      infinite mathematical structures.
+    </p>
+
+    <ul>
+      <li>
+        Developed finite representations of inversion sets, reducing
+        weak-order comparison between translation-invariant total orders
+        from an infinite problem to a finite computation.
+      </li>
+      <li>
+        Co-designed an efficient data structure and algorithm for comparing
+        two translation-invariant total orders in the weak order.
+      </li>
+      <li>
+        Introduced graph representations of inversion sets and designed a
+        graph-based algorithm for computing joins, or lowest upper bounds.
+      </li>
+      <li>
+        Implemented and open-sourced <em>TITO_Explore</em>, a Python package
+        for TITO-related computations, and led the drafting and revision of
+        the accompanying preprint.
+      </li>
+    </ul>
+  </article>
+
+
+  <!-- MSK -->
+  <article class="research-item">
+    <div class="research-header">
+      <div>
+        <h3>Ronglai Shen Lab</h3>
+        <p class="research-role">
+          QSURE Summer Fellow · Memorial Sloan Kettering Cancer Center
+        </p>
+      </div>
+      <p class="research-meta">
+        New York, NY · Jun.–Aug. 2025
+      </p>
+    </div>
+
+    <p class="research-summary">
+      Evaluated representations learned by self-supervised models through controlled experiments on multimodal pathology images.
+    </p>
+
+    <ul>
+     <li>
+      Developed a Python evaluation pipeline to compare SimCLR
+      representations learned under different augmentation strategies.
+    </li>
+      <li>
+        Designed perturbation and feature-level analyses to assess a model's sensitivity
+      to color, spatial structure, and cross-modal correspondence, using
+      Monte Carlo resampling to evaluate the stability of observed differences.
+      </li>
+    </ul>
+  </article>
+
+
+  <!-- MD Anderson -->
+  <article class="research-item">
+    <div class="research-header">
+      <div>
+        <h3>TRACTION &amp; BNDC</h3>
+        <p class="research-role">
+          CATALYST Summer Intern · University of Texas MD Anderson Cancer Center
+        </p>
+      </div>
+      <p class="research-meta">
+        Houston, TX · Jun.–Aug. 2024
+      </p>
+    </div>
+
+    <p class="research-summary">
+      Evaluated and adapted representations learned by vision-language
+      foundation models using spatially aligned imaging and molecular data.
+    </p>
+
+    <ul>
+   <li>
+      Built an annotated-image benchmark and cross-modal evaluation pipeline
+      for assessing zero-shot cell-type predictions from CONCH.
+    </li>
+    <li>
+      Trained linear probes on foundation-model embeddings, improving
+      downstream classification accuracy by 15% and reducing systematic
+      class confusion.
+    </li>
+    </ul>
+
+    <p class="research-links">
+      <a href="https://github.com/emmaycl/posters/blob/main/Emma_poster_MDA24.pdf"
+         target="_blank"
+         rel="noopener noreferrer">Poster</a>
+    </p>
+  </article>
+
+
+  <!-- Cheung Lab -->
+  <article class="research-item research-item-compact">
+    <div class="research-header">
+      <div>
+        <h3>Vivian G. Cheung Lab</h3>
+        <p class="research-role">
+          Undergraduate Researcher · University of Michigan / Brown University
+        </p>
+      </div>
+      <p class="research-meta">
+        Ann Arbor, MI · Sep. 2023–Apr. 2026
+      </p>
+    </div>
+
+    <p class="research-summary">
+      Developed statistical, network-based, and computational analyses to study
+      RNA Polymerase II pausing and its relationship with variation in human
+      gene expression.
+    </p>
+  </article>
+
+
+  <!-- UC Davis -->
+  <article class="research-item research-item-compact">
+    <div class="research-header">
+      <div>
+        <h3>Nam Tran Lab</h3>
+        <p class="research-role">
+          Hugh Edmondson Summer Intern · UC Davis School of Medicine
+        </p>
+      </div>
+      <p class="research-meta">
+        Sacramento, CA · Jun.–Aug. 2023
+      </p>
+    </div>
+
+    <p class="research-summary">
+      Developed experimental and computational workflows for plasma proteomic
+      profiling and biomarker discovery for earlier sepsis diagnosis.
+    </p>
+  </article>
 </section>
 <section id="conference-abstract">
 <h2>Conference Abstracts</h2>
