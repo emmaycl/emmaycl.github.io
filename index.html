@@ -242,12 +242,6 @@
   white-space: nowrap;
 }
 
-.research-meta {
-  margin: 0;
-  white-space: nowrap;
-  text-align: right;
-}
-
 .research-header h3 {
   margin-bottom: 0.2rem;
   font-size: 1.12rem;
@@ -255,14 +249,13 @@
 
 .research-meta {
   margin: 0;
-  color: var(--muted);
+  color: #666;
   text-align: right;
   white-space: nowrap;
-  font-size: 0.94rem;
+  font-size: 0.92rem;
 }
 
-.research-role,
-.research-meta {
+.research-role{
   color: #666;
   font-size: 0.92rem;
 }
@@ -371,12 +364,6 @@
 
     <span aria-hidden="true" class="divider">|</span>
 
-    <a href="mailto:emmaycl@umich.edu">
-      emmaycl@umich.edu
-    </a>
-
-    <span aria-hidden="true" class="divider">|</span>
-
     <a href="https://github.com/emmaycl">GitHub</a>
   </div>
 </header>
@@ -384,8 +371,7 @@
 <section id="about">
   <h2>About</h2>
  <p>
-  I am interested in understanding how representations learned by machine
-  learning models fail under distribution shift, and how multimodal signals
+  I am interested in understanding how learned representations behave under distribution shift, and how multimodal signals
   and geometric structure can improve generalization across datasets and
   tasks. More broadly, I hope to develop mathematically principled machine
   learning methods for reliable generalization in scientific and embodied
@@ -423,11 +409,13 @@
       Authors are listed alphabetically.
     </p>
     
-    <p style="margin-top: 8px; font-size: 0.95rem; color: var(--muted);">
-      <strong>Key Takeaway:</strong> <em>Computing tasks with TITOs involve infinite comparisons that are traditionally difficult to 
-          handle algorithmically; 
-          we introduced a finite representation and novel algorithms to perform essential computing tasks.</em>
-    </p>
+ <p style="margin-top: 8px; font-size: 0.95rem; color: var(--muted);">
+  <strong>Contribution:</strong>
+  Computing with translation-invariant total orders requires comparing
+  infinite inversion sets. We developed finite representations of these sets
+  and algorithms for weak-order comparison and join computation, and
+  implemented the resulting data structures and algorithms in an open-source Python package.
+</p>
     <div class="links">
       <a href="https://arxiv.org/abs/2607.11709">Paper</a>
       &nbsp;&middot;&nbsp;
@@ -625,7 +613,7 @@
 <h2>Technical Skills</h2>
 <p><strong>Languages:</strong> Python, C++, R, MATLAB, SQL, Bash.</p>
 <p><strong>Machine Learning and Scientific Computing:</strong> PyTorch, scikit-learn, Hugging Face, NumPy, SciPy, pandas.</p>
-<p><strong>Tools:</strong> Git, GitHub, Linux, Docker, SSH.</p>
+<p><strong>Tools:</strong> GitHub, Linux, Docker.</p>
 </section>
 </main>
 <footer>
